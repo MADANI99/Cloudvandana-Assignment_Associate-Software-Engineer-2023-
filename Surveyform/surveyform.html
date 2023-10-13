@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="surveyForm">
+        <h1> Customer survey Form</h1>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+
+            <option value="india">India</option>
+            <option value="Japan">Japan</option>
+            <option value="SaudiArabia">SaudiArabia</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+        </select>
+        <br>
+        <br>
+        
+        <label>Gender:</label><br>
+        <input type="checkbox" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+        
+        <button type="button" id="submitBtn" onclick="submitForm()">Submit</button>
+        <button type="button" id="resetBtn" onclick="resetForm()">Reset</button>
+    </form>
+    <div id="popup" style="display: none;">
+        <h2>Submitted Values:</h2>
+        <p id="popupContent"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
