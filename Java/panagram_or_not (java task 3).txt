@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        String sentence = "The quick brown fox jumps over the lazy dog";
+        sentence = sentence.toLowerCase();    
+        boolean b = true;
+        for (char c = 'a'; c <= 'z'; c++) 
+        {
+            if (sentence.indexOf(c) == -1) 
+            {
+                b = false;
+                break;
+            }
+        }        
+        if (b) {
+            System.out.println("The sentence is a pangram.");
+        } else {
+            System.out.println("The sentence is not a pangram.");
+        }
+               
+    }
+}

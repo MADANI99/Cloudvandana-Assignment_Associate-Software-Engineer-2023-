@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Map;
+public class Main {
+    public static void main(String[] args) {
+       //if we want we can load scanner and give inputs as per wish
+        String romanno = "IX"; 
+        int intgr = 0;
+        Map<Character, Integer> dict = new HashMap<>();
+        dict.put('I', 1);dict.put('V', 5);dict.put('X', 10);dict.put('L', 50);
+        dict.put('C', 100);dict.put('D', 500);dict.put('M', 1000);
+        int val = 0;
+        for (int i = romanno.length() - 1; i >= 0; i--) 
+        {
+            int preval = dict.get(romanno.charAt(i));
+            if (preval < val) 
+            {
+                intgr -= preval;
+            } else 
+            {
+                intgr += preval;
+            }
+            val = preval;
+        }
+        System.out.println("Roman Number: " + romanno);
+        System.out.println("Integer: " + intgr);
+    }
+}
