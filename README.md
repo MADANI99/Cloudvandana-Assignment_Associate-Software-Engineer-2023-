@@ -1,6 +1,7 @@
 # Cloudvandana-Assignment_Associate-Software-Engineer-2023-
 I created this repository for the coding assignment associated with the role of Associate Software Engineer (ASE) at CloudVandana. 
-in this repository, I created different folders for Java, Javascript, Calulator task, Survey form task.
+in this repository, I created different folders for Java, Javascript, Calulator, Surveyform.
+I added the folder of the outputs screenshot where all the output of the code is available
 
 # JAVA
 Task-1: Create a ShuffleArray to shuffle the Array.
