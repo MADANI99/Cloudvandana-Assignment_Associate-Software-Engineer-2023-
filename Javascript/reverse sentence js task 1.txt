@@ -1,0 +1,10 @@
+function fnc(sentence) 
+{
+  const words = sentence.split(' ');
+  const rw = words.map(word => {return word.split('').reverse().join('');});
+  return rw.join(' ');
+  
+}
+const ip = "This is a sunny day";
+const rev = fnc(ip);
+console.log(rev);
