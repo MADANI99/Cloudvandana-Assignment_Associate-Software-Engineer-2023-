@@ -1,0 +1,48 @@
+.calculator {
+    margin: 10px auto;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.display-ac {
+    display: flex;
+    justify-content: space-between;  
+}
+#display {
+    flex: 3;
+    border: none;
+    padding: 16px;
+}
+
+#clear {
+    flex: 1;
+    background-color: #76c7a1;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.button-container {
+    display: flex;
+}
+.button {
+    flex: 1;
+    border: none;
+    width: 60px; 
+    height: 60px; 
+    background-color: #000; 
+    color: #fff; 
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#add, #subtract, #multiply, #divide {
+    background-color: #888; /* Gray background color */
+    color: #fff; /* White text color */
+}
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+    background-color: #555; /* Change background color on hover */
+}
+.button:hover {
+    background-color: #ddd;
+}
